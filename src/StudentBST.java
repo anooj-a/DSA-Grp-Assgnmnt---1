@@ -70,7 +70,7 @@ public class StudentBST {
             System.out.println("No student records in the tree.");
             return;
         }
-        System.out.println("Students sorted by Student ID:");
+        System.out.println("Students sorted by Student ID:\n");
         System.out.println("ID         | Name                 | Programme       | Marks");
         System.out.println("---------------------------------------------------------------");
         inOrderRec(root);
