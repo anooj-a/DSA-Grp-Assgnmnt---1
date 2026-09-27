@@ -29,6 +29,7 @@ public class Main {
         while (running) {
             printMenu();
             int choice = readInt("Enter your choice: ");
+            System.out.println();
             switch (choice) {
                 case 1: addStudent(); break;
                 case 2: updateStudent(); break;
@@ -57,23 +58,37 @@ public class Main {
     }
 
     private static void printMenu() {
+        System.out.println("\n\n===== CIT300 Data Structures and Algortihms (2C) =====");
+        System.out.println("\t\t== ** Byte Builders ** ==");
         System.out.println("\n===== University Student Record & Campus Route Management System =====");
+        System.out.println("=======================================================================\n");
+        System.out.println("Student Records & Service Request");
+        System.out.println("---------------------------------");
+        System.out.println(" Student Records");
+        System.out.println(" ---------------\n");
         System.out.println(" 1. Add Student Record");
         System.out.println(" 2. Update Student Record");
         System.out.println(" 3. Delete Student Record");
         System.out.println(" 4. Display All Records using Linked List");
+        System.out.println();
+        System.out.println(" Service Request");
+        System.out.println(" ---------------\n");
         System.out.println(" 5. Add Service Request to Queue");
         System.out.println(" 6. Process Next Service Request");
+        System.out.println();
         System.out.println(" 7. Display Recent Actions using Stack");
         System.out.println(" 8. Display Students using BST");
         System.out.println(" 9. Search Student using Hashing");
+        System.out.println();
+        System.out.println("Connections Between Campus Locations");
+        System.out.println("------------------------------------\n");
         System.out.println("10. Add Campus Location");
         System.out.println("11. Remove Campus Location");
         System.out.println("12. Add Campus Connection/Road");
         System.out.println("13. Remove Campus Connection/Road");
         System.out.println("14. Display Campus Connections");
         System.out.println("15. Traverse Campus Locations using BFS or DFS");
-        System.out.println("16. Exit");
+        System.out.println("16. Exit\n");
     }
 
     // ---------- Student record operations ----------
